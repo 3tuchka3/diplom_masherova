@@ -1,0 +1,13 @@
+### Получение токена
+POST http://127.0.0.1:8000/api/accounts/login/
+Content-Type: application/json
+
+{
+  "username": "2",
+  "password": "qwer"
+}
+
+### Проверка доступа к КПП
+GET http://127.0.0.1:8000/api/dormitory/cards/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY5OTU4NTUxLCJpYXQiOjE3Njk4NzIxNTEsImp0aSI6IjI0ODg3ZWQ4ZjVjODRkZGViMmZlNTdmZGJhMzRlNjNkIiwidXNlcl9pZCI6IjUiLCJ1c2VybmFtZSI6IjIiLCJwb3NpdGlvbiI6Ilx1MDQzMFx1MDQzNFx1MDQzY1x1MDQzOFx1MDQzZCBcdTA0M2FcdTA0M2VcdTA0MzJcdTA0NDBcdTA0M2VcdTA0NGIiLCJpc19kb3JtX21hbmFnZXIiOmZhbHNlLCJpc19jaGVja3BvaW50X29mZmljZXIiOmZhbHNlLCJpc19jYXJwZXRfYWRtaW4iOnRydWV9.qLYxQ4zYRuRnfxL4EC-nhBD46IZQ6nj85MUSlzEr2Mc
+
